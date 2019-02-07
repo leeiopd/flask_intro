@@ -1,0 +1,8 @@
+{% for timeline in timelines %}
+<div> username : {{timeline.username}}, message : {{timeline.message}} </div>
+{% endfor %}
+<form action="/timeline/create">
+    <input type="text" name="username">
+    <input type="text" name="message">
+    <input type="submit">
+</form>
